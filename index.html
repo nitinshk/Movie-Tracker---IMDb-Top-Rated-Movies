@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="index.css">
+    <title>WhaToWatch</title>
+    </head>
+    <body>
+        <section class="showcase">
+            <header>
+                <h2 class="logo">WhatoWatch.com</h2>
+                <nav class="active" id="nav">
+                    <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="login.html">Login</a></li>
+                      <li><a href="search.html">Search</a></li>
+                      <li><a href="about.html">About us</a></li>
+                    </ul>
+                  
+                    <button class="icon" id="toggle">
+                      <div class="line line1"></div>
+                      <div class="line line2"></div>
+                    </button>
+                  </nav>
+            </header>
+            
+            <video src="netflixfull.mp4" muted loop autoplay ></video>
+            <div class="overlay"></div>
+
+            <div class="text">
+                <h2>Never Stop </h2>
+                <h3>Watching Amazing Shows</h3>
+                <p>Because of corona virus all theaters are closed. But don't miss entertainment and don't feel bore . 
+                    We are here to suggest you amazing shows and movies which release recently and having high IDMB rating. In this platform you can search any type of shows and movies.
+                </p>
+                <a href="search.html">Explore Movies</a>
+            </div>
+
+        </section>
+        <script>
+            const toggle = document.getElementById("toggle");
+            const nav = document.getElementById("nav");
+            
+            toggle.addEventListener("click", () => nav.classList.toggle("active"));
+            </script>
+    </body>
+</html>    

@@ -1,0 +1,56 @@
+<html>
+    <title>
+        LOG in PAGE
+    </title>
+    <head>
+        <link rel="stylesheet" href="login.css"></head>
+    <body>
+        <section class="showtime">
+                   <nav class="active" id="nav">
+                       <ul>
+                       <li><a href="index.html">Home</a></li>
+                       <li><a href="login.html">Login</a></li>
+                       <li><a href="search.html">Search</a></li>
+                       <li><a href="about.html">About us</a></li>
+                       </ul>
+                   
+                       <button class="icon" id="toggle">
+                       <div class="line line1"></div>
+                       <div class="line line2"></div>
+                       </button>
+                   </nav>
+            
+       </section>
+       <video src="netflixfull.mp4" muted loop autoplay ></video>
+            
+            <div class="overlay"></div>
+        <div class="sharma">
+            <h1>Login For Better</h1>
+
+                 <h1>Experience</h1>
+
+            <form>
+                <div class="control">
+                <input type="text" required />
+                <label>Email</label>
+                </div>
+
+                <div class="control">
+                <input type="password" required />
+                <label>Password</label>
+                </div>
+
+                <button class="btn">Login</button>
+
+                <p class="text">Don't have an account? <a href="#">Register</a></p>
+            </form>
+        </div>
+        <script>
+            const toggle = document.getElementById("toggle");
+            const nav = document.getElementById("nav");
+            
+            toggle.addEventListener("click", () => nav.classList.toggle("active"));
+            
+        </script>
+    </body>
+</html>
